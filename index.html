@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      .text {
-        font-size: 30px;
+      body {
+        padding: 5px;
+      }      
+      .viewport {
+        font-size: 40px;
+        padding: 10px;
+        border: 4px dotted rgb(207, 148, 10);
       }
-      @media (max-width: 1000px) {
-        .text {
-          color: blue;
-          font-size: 100px;
+      /* @media all and (hover: hover) {
+        .viewport {
+          max-width: 50%;
+          font-family: Impact;
+          color: rgb(50, 12, 174);
+          border: 4px solid rgb(207, 20, 82);
+        }
+      } */
+      @media all and (pointer: none) {
+        .viewport {
+          max-width: 50%;
+          font-family: Impact;
+          color: rgb(14, 193, 80);
+          border: 4px solid rgb(200, 7, 155);
         }
       }
-      .resize {
-        resize: both;
-        overflow: auto;
-        font-size: 100px;
-        border: 2px solid;
-      }
-
     </style>
   </head>
   <body>
-    <div class="text">
-      Hover Test
-    </div>
-
-    <div class="resize">
-      Hover Test
-    </div>
+    <div class="viewport">Playing with CSS Media Queries</div>    
   </body>
 </html>
-
-
-
-
-<!-- <p style="font-size: 70px; margin-top: 200px; text-align: center;"><a target="_blank" href="Quick%20start%20episode%204%20thumbnail.jpg">Open An Image File</a></p>
-
-<p style="font-size: 70px; margin-top: 100px; text-align: center;"><a target="_blank" href="Youtube%20Pixabay%20subscribe%20anim.mp4">Open/Play A Video File</a></p>
-
-<p style="font-size: 70px; margin-top: 100px; text-align: center;"><a target="_blank" href="Good%20Days.mp4">Open/Play An Audio File</a></p> -->
